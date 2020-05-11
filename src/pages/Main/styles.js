@@ -1,58 +1,62 @@
-import { StyleSheet } from 'react-native';
+import styled from 'styled-components';
+
+export const Container = styled.View`
+    flex: 1;
+    background-color: #8B10AE;
+
+`;
+
+export const Content = styled.View`
+    flex: 1;
+    max-height: 390px;
+    justify-content: center;
 
 
-export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#8B10AE',
-        
-    },
-    content: {
-        flex: 1,
-        maxHeight: 390,
-        justifyContent: 'center',
-        // zIndex: 5,
-        marginBottom:10,
-    },
-    card: {
-        flex: 1,
-        backgroundColor: '#FFF',
-        borderRadius: 4,
-        marginHorizontal: 20,
-        marginVertical: 0,
-        // height: '100%',
+`;
 
-    },
-    cardHeader:{
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: 30,
-    },
-    cardContent: {
-        flex: 1,
-        paddingVertical:0,
-        paddingHorizontal: 30,
-        justifyContent: 'center',
-    },
-    cardFooter: {
-        padding: 30,
-        backgroundColor: '#eee',
-        borderRadius: 4,
+export const Card = styled.View`
+    flex: 1;
+    background-color: #FFF;
+    border-radius: 4px;
+    margin-horizontal: 20px;
+    margin-vertical: 0px;
 
-    },
-    title:{
-        fontSize: 13,
-        color: '#999'
-    },
-    description:{
-        fontSize: 32,
-        marginTop: 3,
+`;
 
-    },
-    anottation:{
-        fontSize: 13,
-        color: '#333'
-    },
+export const CardHeader = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
 
-});
+`;
+
+export const CardContent = styled.View`
+    
+    flex: 1;
+    padding-vertical:0px;
+    padding-horizontal: 30px;
+    justify-content: center;
+`;
+export const CardFooter = styled.View`
+    padding: 30px;
+    background-color: #eee;
+    border-radius: 4px;
+
+`;
+
+export const Title = styled.Text`
+    font-size: 13px;
+    color: #999;
+`;
+
+export const Description = styled.Text`
+    font-size: 32px;
+    margin-top: 3px;
+
+`;
+
+export const Anottation = styled.Text`
+    font-size: 13px;
+    color: #333;
+`;
